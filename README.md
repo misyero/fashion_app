@@ -23,7 +23,7 @@ Things you may want to cover:
 
 * ...
 
-# アプリ名
+## アプリ名
 MyFashion
 
 ## 概要
