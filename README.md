@@ -90,7 +90,7 @@ MyFashion
 # normalshopsテーブル
 |column|Type|Option|
 |------|----|-------|
-|imageURL|unique: true|
+|imageURL|text|unique: true|
 |shopName|text|unique: true|
 |updateFrequency|text|unique: true|
 |webStoreURL|text|unique: true|
@@ -129,7 +129,7 @@ MyFashion
 # suitshopsテーブル
 |column|Type|Option|
 |------|----|-------|
-|imageURL|unique: true|
+|imageURL|text|unique: true|
 |shopName|text|unique: true|
 |updateFrequency|text|unique: true|
 |webStoreURL|text|unique: true|
