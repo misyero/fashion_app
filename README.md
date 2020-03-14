@@ -24,7 +24,7 @@ Things you may want to cover:
 * ...
 
 # アプリ名
-マイファッション
+MyFashion
 
 # 概要
 自分の服装アイテム、服装のセットリスト、店舗データの保存。
