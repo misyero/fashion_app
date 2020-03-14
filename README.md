@@ -39,14 +39,6 @@ MyFashion
 ファッション店舗を追加するものから事前にあるものを選択するように設定を直します。
 
 # DB設計
-# usersテーブル
-|column|Type|Option|
-|------|----|-------|
-|nick_name|string|null: false|
-|email_address|string|null: false|
-|password|string|null: false|
-### Association
--  :
 
 # normalitemlistsテーブル
 |column|Type|Option|
