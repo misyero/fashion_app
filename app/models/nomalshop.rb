@@ -1,0 +1,2 @@
+class Nomalshop < ApplicationRecord
+end

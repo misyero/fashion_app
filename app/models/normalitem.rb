@@ -1,0 +1,2 @@
+class Normalitem < ApplicationRecord
+end

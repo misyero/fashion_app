@@ -1,0 +1,101 @@
+<header>
+  <div class="home-navigate">
+    <a id="header-title" href="http://localhost:3000/">Fashion App</a>
+    <a class="sub-title" href="suits">-> スーツ</a>
+    <a class="sub-title" href="suitsetups">-> セットアップリスト</a>
+    <a id="link1" href="suitshops">お気に入りショップリスト</a>
+    <a id="link2" href="suititemlists">アイテムリスト</a>
+  </div>
+</header>
+
+<body>
+  <div class="new_setup">
+    <div class="setup_form1">
+      <%= form_for(@suitset) do |f| %>
+        <div class="setup_setupTitle">
+          <p class="input_title">セットアップタイトル</p>
+          <%=f.text_field :setupTitle, placeholder:"タイトルを入力してください", :class => 'setup_textbox' %>
+        </div>
+        <div class="setup_hat">
+          <p class="input_title">帽子</p>
+          <%=f.text_field :hat, placeholder:"名称を入力してください", :class => 'setup_textbox' %>
+        </div>
+        <div class="setup_glass">
+          <p class="input_title">メガネ</p>
+          <%=f.text_field :glass, placeholder:"名称を入力してください", :class => 'setup_textbox' %>
+        </div>
+        <div class="setup_earring">
+          <p class="input_title">ピアス・イヤリング</p>
+          <%=f.text_field :earring, placeholder:"名称を入力してください", :class => 'setup_textbox' %>
+        </div>
+        <div class="setup_clock">
+          <p class="input_title">時計</p>
+          <%=f.text_field :clock, placeholder:"名称を入力してください", :class => 'setup_textbox' %>
+        </div>
+        <div class="setup_bangle">
+          <p class="input_title">腕輪</p>
+          <%=f.text_field :bangle, placeholder:"名称を入力してください", :class => 'setup_textbox' %>
+        </div>
+        <div class="setup_bug">
+          <p class="input_title">バッグ</p>
+          <%=f.text_field :bug, placeholder:"名称を入力してください", :class => 'setup_textbox' %>
+        </div>
+        <div class="setup_tie">
+          <p class="input_title">ネクタイ</p>
+          <%=f.text_field :tie, placeholder:"名称を入力してください", :class => 'setup_textbox' %>
+        </div>
+        <div class="setup_handkerchief">
+          <p class="input_title">ハンカチ</p>
+          <%=f.text_field :handkerchief, placeholder:"名称を入力してください", :class => 'setup_textbox' %>
+        </div>
+        <div class="setup_inner">
+          <p class="input_title">内着</p>
+          <%=f.text_field :inner, placeholder:"名称を入力してください", :class => 'setup_textbox' %>
+        </div>
+      </div>  
+      <div class="setup_form2">
+        <div class="setup_Tshirt">
+          <p class="input_title">Tシャツ</p>
+          <%=f.text_field :Tshirt, placeholder:"名称を入力してください", :class => 'setup_textbox' %>
+        </div>
+        <div class="setup_Yshirt">
+          <p class="input_title">Yシャツ</p>
+          <%=f.text_field :Yshirt, placeholder:"名称を入力してください", :class => 'setup_textbox' %>
+        </div>
+        <div class="setup_underwear">
+          <p class="input_title">下着</p>
+          <%=f.text_field :underwear, placeholder:"名称を入力してください", :class => 'setup_textbox' %>
+        </div>
+        <div class="setup_pant">
+          <p class="input_title">パンツ</p>
+          <%=f.text_field :pant, placeholder:"名称を入力してください", :class => 'setup_textbox' %>
+        </div>
+        <div class="setup_socks">
+          <p class="input_title">ソックス</p>
+          <%=f.text_field :socks, placeholder:"名称を入力してください", :class => 'setup_textbox' %>
+        </div>
+        <div class="setup_">
+          <p class="input_title">靴</p>
+          <%=f.text_field :shoes, placeholder:"名称を入力してください", :class => 'setup_textbox' %>
+        </div>
+        <div class="setup_FirstAccessorie">
+          <p class="input_title">アクセサリ①</p>
+          <%=f.text_field :FirstAccessorie, placeholder:"名称を入力してください", :class => 'setup_textbox' %>
+        </div>
+        <div class="setup_SecondAccessorie">
+          <p class="input_title">アクセサリ②</p>
+          <%=f.text_field :SecondAccessorie, placeholder:"名称を入力してください", :class => 'setup_textbox' %>
+        </div>
+        <div class="setup_ThirdAccessorie">
+          <p class="input_title">アクセサリ③</p>
+          <%=f.text_field :ThirdAccessorie, placeholder:"名称を入力してください", :class => 'setup_textbox' %>
+        </div>
+        <%=f.submit "保存する", :class => 'setup_submit' %>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</body>
+
+<footer>
+</footer>

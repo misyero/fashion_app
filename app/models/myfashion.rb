@@ -1,0 +1,2 @@
+class Myfashion < ApplicationRecord
+end

@@ -1,0 +1,2 @@
+class Nomalitemlist < ApplicationRecord
+end

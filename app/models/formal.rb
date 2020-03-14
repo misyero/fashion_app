@@ -1,0 +1,2 @@
+class Formal < ApplicationRecord
+end

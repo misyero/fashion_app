@@ -1,0 +1,44 @@
+<header>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <div class="home-navigate">
+    <a id="header-title" href="http://localhost:3000/">Fashion App</a>
+    <a class="sub-title" href="normals">-> 私服</a>
+    <a class="sub-title" href="normalsets">-> セットアップリスト</a>
+    <a id="link1" href="normalshops">お気に入りショップリスト</a>
+    <a id="link2" href="normalitems">アイテムリスト</a>
+    <a id="link3" href="normalsets/new">セットアップ追加はこちら</a>
+  </div>
+</header>
+
+</body>
+  <div class="normal-main_content">
+    <% @normalset.each do |normalset| %>
+    <div class="setuplist">
+      <div class="setuplists">
+        <div class="setup_display">
+          <div class="setup_title">
+            <p class="item_title" id="main_title">セットアップ名：<%= normalset.setupTitle %></p>
+            <a class="far fa-edit setup_edit" href="normalsets/<%= normalset.id %>/edit"></a>
+            <a class="fas fa-trash-alt setup_trush" data-method="delete" href="normalsets/<%= normalset.id %>"></a>
+          </div>
+          <div class="head_item">
+            <p class="item_title">ヘッドアイテム</p><p><%= normalset.hat %>/<%= normalset.glass %>/<%= normalset.earring %></p>
+          </div>
+          <div class="body_item">
+            <p class="item_title">ボディアイテム</p><p><%= normalset.clock %>/<%= normalset.bangle %>/<%= normalset.bug %>/<%= normalset.tie %>/<%= normalset.handkerchief %>/<%= normalset.inner %>/<%= normalset.Tshirt %>/<%= normalset.Yshirt %></p>
+          </div>
+          <div class="bottom_item">
+            <p class="item_title">ボトムアイテム</p><p><%= normalset.underwear %>/<%= normalset.pant %></p>
+          </div>
+          <div class="shoes_item">
+            <p class="item_title">シューズアイテム</p><p><%= normalset.socks %>/<%= normalset.shoes %></p>
+          </div>
+          <div class="accessorie_item">
+            <p class="item_title">アクセサリ</p><p><%= normalset.FirstAccessorie %>/<%= normalset.SecondAccessorie %>/<%= normalset.ThirdAccessorie %></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</body>

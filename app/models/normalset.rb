@@ -1,0 +1,2 @@
+class Normalset < ApplicationRecord
+end

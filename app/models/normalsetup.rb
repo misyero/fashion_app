@@ -1,0 +1,2 @@
+class Normalsetup < ApplicationRecord
+end

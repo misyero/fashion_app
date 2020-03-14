@@ -1,0 +1,40 @@
+.edit_form{
+  border: 2px solid gainsboro;
+  margin-top: 10%; 
+  height: 500px;
+  width: 800px;
+}
+
+.edit_form-title{
+  text-align: center;
+  font-size: 30px;
+}
+
+.edit_form-field{
+  display: flex;
+  font-size: 20px;
+  margin: 20px 0 0 10px;
+  line-height: 50px;
+}
+
+.edit_form-myshop{
+  margin-left: 10px;
+}
+
+.add_shop{
+  font-size: 20px;
+  height: 50px;
+  width: 400px;
+}
+
+#yourshops{
+  border-bottom: 1px solid gainsboro;
+}
+
+.submit_shop{
+  margin-top: 40%;
+  font-size: 200px;
+  width: 200px;
+  height: 2em;
+  float: right; 
+}

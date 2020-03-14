@@ -1,0 +1,222 @@
+.sub-title{
+  padding-left: 10px;
+  color: firebrick;
+}
+
+.normal-main_content{
+  text-align: center;
+}
+
+.shoplist{
+  margin: 0 34%;
+}
+
+.shops {
+  position: absolute;
+  color: black;
+  margin-top: 100px;
+  overflow: scroll;
+}
+
+.shop_name{
+  font-size: 30px;
+  background-color: white;
+  width: 300px;
+}
+
+.shop_item-cool{
+  background-color: white;
+  width: 180px;
+}
+
+.shop_display{
+  border: 2px solid black;
+  width: 600px;
+  height: 600px;
+}
+
+.fa-edit{
+  margin-left: 10px;
+}
+
+.fa-trash-alt{
+  margin-left: 10px;
+}
+
+.shop1{
+  height: 400px;
+  width: 400px;
+}
+
+.shop_name{
+  margin-bottom: 5px;
+}
+
+#text{
+  color: black;
+}
+
+.shop_item-cool{
+  margin-bottom: 5px;
+}
+
+.web-access{
+  font-size: 20px;
+  color: green;
+}
+
+.shop_link{
+  padding: 10px;
+  background-color: white;
+  width: 200px;
+}
+
+.new_shop{
+  border: 2px solid black;
+  width: 500px;
+  height: 700px;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.input_title{
+  margin-top: 20px;
+}
+
+.shop_form{
+  margin-left: 10px;
+}
+
+.shop_imageURL{
+  margin-top: 20px;
+}
+
+.shop_textbox{
+  width: 450px;
+  height: 50px;
+  line-height: 50px;
+}
+
+.submit{
+  margin: 60px 0 0 20px;
+  width: 400px;
+  font-size: 20px;
+  background-color: steelblue;
+  padding: 20px;
+}
+
+.normalitemlist{
+  background-image: url("https://yukobo.jp/teresa/wp-content/uploads/2018/11/11-2-1024x730.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 725px;
+}
+
+.suititemlist{
+  background-image: url("https://www.azabutailor.com/wp-content/uploads/2016/04/001-1024x677.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 725px;
+}
+
+.itemlist{
+  background-color: white;
+  border: 2px solid;
+  display: flex;
+  position: relative;
+  top: 20px;
+  width: 1000px;
+  height: 40px;
+  line-height: 40px;
+  margin-bottom: 10px;
+  overflow: scroll;
+}
+
+.normal_item_name{
+  font-weight: bold;
+}
+
+.setup_display{
+  background-color: whitesmoke;
+  border: 2px solid;
+  width: 1000px;
+  height: 500px;
+  position: relative;
+  top: 75px;
+  overflow: scroll;
+  margin-bottom: 10px;
+}
+
+.fa-edit{
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.fa-trash-alt{
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.setup_edit{
+  font-size: 30px;
+}
+
+.setup_trush{
+  font-size: 30px;
+}
+
+.setup_title{
+  display: flex;
+  margin-top: 10px;
+}
+
+.item_title{
+  color: crimson;
+  font-weight: bold;
+}
+
+#main_title{
+  font-size: 30px;
+}
+
+.head_item{
+  display: flex;
+  margin-top: 50px;
+}
+
+.body_item{
+  display: flex;
+  margin-top: 50px;
+}
+
+.bottom_item{
+  display: flex;
+  margin-top: 50px;
+}
+
+.shoes_item{
+  display: flex;
+  margin-top: 50px;
+}
+
+.accessorie_item{
+  display: flex;
+  margin-top: 50px;
+}
+
+.setup_textbox{
+  width: 400px;
+  font-size: 15px;
+}
+
+.setup_form1{
+  display: flex;
+}
+
+.setup_submit{
+  margin-top: 20px;
+  width: 400px;
+  font-size: 20px;
+  background-color: steelblue;
+  padding: 20px;
+}

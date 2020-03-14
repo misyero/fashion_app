@@ -1,0 +1,42 @@
+<header>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <div class="home-navigate">
+    <a id="header-title" href="http://localhost:3000/">Fashion App</a>
+    <a class="sub-title" href="normals">-> 私服</a>
+    <a class="sub-title" href="normalshops">-> お気に入りショップリスト</a>
+    <a id="link1" href="normalsets">セットアップリスト</a>
+    <a id="link2" href="normalitems">アイテムリスト</a>
+    <a id="link3" href="normalshops/new">ショップ追加はこちら</a>
+  </div>
+</header>
+
+</body>
+  <div class="normal-main_content">
+   <div class="shoplist">
+    <% @normalshop.each do |normalshop| %>
+    <div class="shops">
+      <div class="shop_display">
+        <div class="shop_name">
+          <%= normalshop.shopName %>
+          <a class="far fa-edit" href="normalshops/<%= normalshop.id %>/edit"></a>
+          <a class="fas fa-trash-alt" data-method="delete" href="normalshops/<%= normalshop.id %>"></a>
+        </div>
+        <div class="shop_new-item">
+          <div class="shop_item-cool">
+            <%= normalshop.updateFrequency %>
+          </div>
+          <div class="shop_image">
+            <%= image_tag normalshop.imageURL, class: 'shop1' %>
+          </div>
+          <div class="shop_link">
+            <a href="<%= normalshop.webStoreURL %>">ショップサイトはこちら</a>
+          </div>
+        </div>
+    </div>
+    <% end %>
+    </div>
+  </div>
+</body>
+
+<footer>
+</footer>

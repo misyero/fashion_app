@@ -1,0 +1,109 @@
+.home-navigate{
+  background-color: silver;
+  font-size: 20px;
+  width: 100%;
+  height: 20%;
+  line-height: 65px;
+}
+
+#header-title{
+  font-size: 30px;
+  padding-left: 20px;
+}
+
+#link1{
+  float: right;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#link2{
+  float: right;
+  padding-left: 20px;
+}
+
+#link3{
+  float: right;
+  padding-left: 20px;
+}
+
+.home-title{
+  font-size: 80px;   
+  text-align: center;
+  color: aliceblue;
+}
+
+.normalwear-title{
+  font-size: 80px;   
+  text-align: center;
+}
+
+.mein-content{
+  background-image: url("https://2.bp.blogspot.com/-zwgByIaWNSg/Ut1-nQbXcUI/AAAAAAAAG0M/bQQ2VSTBGy0/s2560/night-view-wallpaper-8705867109_6c651a1957_o.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 725px;
+}
+
+.buttons{
+  display: flex;
+  font-size: 50px;
+  padding: 200px 200px 100px 200px;
+}
+
+#formal-button{
+  border: 2px solid;
+  background-color: mediumseagreen;
+  width: 300px;
+  height: 300px;
+  line-height: 300px;
+  text-align: center;
+}
+
+#suit-button{
+  border: 2px solid;
+  background-color: deepskyblue;
+  width: 300px;
+  height: 300px;
+  line-height: 300px;
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.normal-buttons{
+  width: 900px;
+  line-height: 100px;
+  text-align: center;
+  font-size: 75px;
+  padding-top: 50px;
+}
+
+.normal-shop{
+  border: 2px solid;
+  margin: 20px;
+  background-color: darkorange;
+}
+
+.normal-itemlist{
+  border: 2px solid;
+  margin: 20px;
+  background-color: lightgreen;
+}
+
+.normal-setup{
+  border: 2px solid;
+  margin: 20px;
+  background-color: skyblue;
+}
+
+.normal-main_content{
+  background-image: url("https://www.ryutsuu.biz/images/2019/10/20191023uniqlo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 725px;
+}

@@ -1,0 +1,2 @@
+class Suitsetup < ApplicationRecord
+end

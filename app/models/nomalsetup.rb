@@ -1,0 +1,2 @@
+class Nomalsetup < ApplicationRecord
+end

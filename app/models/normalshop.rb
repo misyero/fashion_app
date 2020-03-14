@@ -1,0 +1,2 @@
+class Normalshop < ApplicationRecord
+end

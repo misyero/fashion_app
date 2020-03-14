@@ -1,0 +1,46 @@
+<header>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <div class="home-navigate">
+    <a id="header-title" href="http://localhost:3000/">Fashion App</a>
+    <a class="sub-title" href="suits">-> スーツ</a>
+    <a class="sub-title" href="suitsetups">-> セットアップリスト</a>
+    <a id="link1" href="suitshops">お気に入りショップリスト</a>
+    <a id="link2" href="suititemlists">アイテムリスト</a>
+    <a id="link3" href="suitsetups/new">セットアップ追加はこちら</a>
+  </div>
+</header>
+
+</body>
+  <div class="normal-main_content">
+    <div class="suititemlist">
+      <% @suitset.each do |suitset| %>
+      <div class="setuplist">
+        <div class="setuplists">
+          <div class="setup_display">
+            <div class="setup_title">
+              <p class="item_title" id="main_title">セットアップ名：<%= suitset.setupTitle %></p>
+              <a class="far fa-edit setup_edit" href="suitsetups/<%= suitset.id %>/edit"></a>
+              <a class="fas fa-trash-alt setup_trush" data-method="delete" href="suitsetups/<%= suitset.id %>"></a>
+            </div>
+            <div class="head_item">
+              <p class="item_title">ヘッドアイテム</p><p><%= suitset.hat %>/<%= suitset.glass %>/<%= suitset.earring %></p>
+            </div>
+            <div class="body_item">
+              <p class="item_title">ボディアイテム</p><p><%= suitset.clock %>/<%= suitset.bangle %>/<%= suitset.bug %>/<%= suitset.tie %>/<%= suitset.handkerchief %>/<%= suitset.inner %>/<%= suitset.Tshirt %>/<%= suitset.Yshirt %></p>
+            </div>
+            <div class="bottom_item">
+              <p class="item_title">ボトムアイテム</p><p><%= suitset.underwear %>/<%= suitset.pant %></p>
+            </div>
+            <div class="shoes_item">
+              <p class="item_title">シューズアイテム</p><p><%= suitset.socks %>/<%= suitset.shoes %></p>
+            </div>
+            <div class="accessorie_item">
+              <p class="item_title">アクセサリ</p><p><%= suitset.FirstAccessorie %>/<%= suitset.SecondAccessorie %>/<%= suitset.ThirdAccessorie %></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</body>

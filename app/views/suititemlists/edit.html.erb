@@ -1,0 +1,38 @@
+<header>
+  <div class="home-navigate">
+    <a id="header-title" href="http://localhost:3000/">Fashion App</a>
+    <a class="sub-title" href="suits">-> 私服</a>
+    <a class="sub-title" href="suititemlists">-> アイテムリスト</a>
+    <a id="link1" href="suitsetups">セットアップリスト</a>
+    <a id="link2" href="suitshops">ショップリスト</a>
+  </div>
+</header>
+
+<body>
+  <div class="new_shop">
+    <div class="shop_form">
+      <%= form_for(@suititem) do |f| %>
+        <div class="item_name">
+          <p class="input_title"></p>
+          <%=f.text_field :itemName, placeholder:"アイテムの名称を入力してください", :class => 'shop_textbox' %>
+        </div>
+        <div class="item_genre">
+          <p class="input_title">ショップ名</p>
+          <%=f.select :itemGenre,[["帽子","帽子"],["メガネ","メガネ"],["ピアス","ピアス"],["時計","時計"],["腕輪","腕輪"],["バック","バック"],["ネクタイ","ネクタイ"],["ハンカチ","ハンカチ"],["インナー","インナー"],["Tシャツ","Tシャツ"],["Yシャツ","Yシャツ"],["下着","下着"],["パンツ","パンツ"],["靴下","靴下"],["靴","靴"],["その他装飾品","その他装飾品"]] %>
+        </div>
+        <div class="item_color">
+          <p class="input_title">アイテムのカラー</p>
+          <%=f.text_field :itemColor, placeholder:"アイテムの名称を入力してください", :class => 'shop_textbox' %>
+        </div>
+        <div class="item_price">
+          <p class="input_title">価格帯</p>
+          <%=f.select :itemPrice,[["1,000円台","1,000円台"],["2,000円台","2,000円台"],["3,000円台","3,000円台"],["4,000円台","4,000円台"],["5,000円台","5,000円台"],["6,000円台","6,000円台"],["7,000円台","7,000円台"],["8,000円台","8,000円台"],["9,000円台",",9000円台"],["1万円台","1万円台"],["2万円台","2万円台"],["3万円台","3万円台"],["4万円台","4万円台"],["5万円台","5万円台"],["6万円台","6万円台"],["7万円台","7万円台"],["8万円台","8万円台"],["9万円台","9万円台"],["10万円台","10万円台"],["15万円台","15万円台"],["20万円台","20万円台"],["25万円台","25万円台"],["30万円台","30万円台"],["50万円台","50万円台"],["100万円台","100万円台"],["200万円台","200万円台"]] %>
+        </div>
+        <%=f.submit "保存する", :class => 'submit' %>
+      <% end %>
+    </div>
+  </div>
+</body>
+
+<footer>
+</footer>

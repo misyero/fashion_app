@@ -1,0 +1,37 @@
+<header>
+  <div class="home-navigate">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <a id="header-title" href="http://localhost:3000/">Fashion App</a>
+    <a class="sub-title" href="suits">-> 私服</a>
+    <a class="sub-title" href="suititemlists">-> アイテムリスト</a>
+    <a id="link1" href="suitsetups">セットアップリスト</a>
+    <a id="link2" href="suitshops"> ショップリスト</a>
+    <a id="link3" href="suititemlists/new">アイテム追加はこちら</a>
+  </div>
+</header>
+
+</body>
+  <div class="suititemlist">
+    <% @suititem.each do |suititemlist| %>
+    <div class="itemlist">
+      <div class="normal_item_name">
+        <%= suititemlist.itemName %>
+      </div>
+      <div class="normal_item_genre">
+        <%= suititemlist.itemGenre %>
+      </div>
+      <div class="normal_item_color">
+        <%= suititemlist.itemColor %>
+      </div>
+      <div class="normal_item_price">
+        <%= suititemlist.itemPrice %>
+      </div>
+      <a class="far fa-edit" href="suititemlists/<%= suititemlist.id %>/edit"></a>
+      <a class="fas fa-trash-alt" data-method="delete" href="suititemlists/<%= suititemlist.id %>"></a>
+    </div>
+    <% end %>
+  </div>
+</body>
+
+<footer>
+</footer>

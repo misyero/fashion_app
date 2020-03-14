@@ -1,0 +1,2 @@
+class Suititemlist < ApplicationRecord
+end

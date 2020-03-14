@@ -1,0 +1,38 @@
+<header>
+  <div class="home-navigate">
+    <a id="header-title" href="http://localhost:3000/">Fashion App</a>
+    <a class="sub-title" href="normals">-> 私服</a>
+    <a class="sub-title" href="normalshops">-> お気に入りショップリスト</a>
+    <a id="link1" href="normalsets">セットアップリスト</a>
+    <a id="link2" href="normalitems">アイテムリスト</a>
+  </div>
+</header>
+
+<body>
+  <div class="new_shop">
+    <div class="shop_form">
+      <%= form_for(@normalshop) do |f| %>
+        <div class="shop_imageURL">
+          <p class="input_title">ショップ画像</p>
+          <%=f.text_field :imageURL, :class => 'shop_textbox' %>
+        </div>
+        <div class="shop_shopName">
+          <p class="input_title">ショップ名</p>
+          <%=f.text_field :shopName, :class => 'shop_textbox' %>
+        </div>
+        <div class="shop_updateFrequency">
+          <p class="input_title">ショップクール（更新頻度）</p>
+          <%=f.text_field :updateFrequency, :class => 'shop_textbox' %>
+        </div>
+        <div class="shop_webStoreURL">
+          <p class="input_title">WebサイトURL</p>
+          <%=f.text_field :webStoreURL, :class => 'shop_textbox' %>
+        </div>
+        <%=f.submit "保存する", :class => 'submit' %>
+      <% end %>
+    </div>
+  </div>
+</body>
+
+<footer>
+</footer>

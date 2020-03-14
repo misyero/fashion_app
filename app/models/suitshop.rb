@@ -1,0 +1,2 @@
+class Suitshop < ApplicationRecord
+end

@@ -1,0 +1,2 @@
+module SuitsetupsHelper
+end
