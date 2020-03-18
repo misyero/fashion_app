@@ -63,3 +63,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'jquery-rails'
 gem 'haml-rails'
 gem 'rinku'
+gem 'unicorn', '5.4.1'
